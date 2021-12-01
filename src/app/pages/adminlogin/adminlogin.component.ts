@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-adminlogin',
@@ -6,10 +8,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./adminlogin.component.css']
 })
 export class AdminloginComponent implements OnInit {
+ 
+ email:string='';
+ password:string='';
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor( private route :Router) { 
+    
   }
 
+  ngOnInit(): void {
+    
+  }
+  adminLogin(){
+    if((this.email=="admin@gmail.com" && this.password=="admin") && (this.email!=null && this.password!=null)){
+      console.log("You are logged in successfully !!");
+      this.route.navigate(['/dashboard']);
+  
+    }
+    else{
+      console.log("User unauthorized !Try again ||");
+      window.alert("Invalid Credential try again !!")
+    }
+  }
+
+  
 }
+
+
