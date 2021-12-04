@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 })
 export class AdminloginComponent implements OnInit {
  
- email:string='';
- password:string='';
+  public email:string='';
+  public password:string='';
 
   constructor( private route :Router) { 
     
@@ -27,7 +27,7 @@ export class AdminloginComponent implements OnInit {
     }
     else{
       console.log("User unauthorized !Try again ||");
-      window.alert("Invalid Credential try again !!")
+      window.alert("Invalid Credential try again !!");
     }
   }
 

@@ -10,12 +10,11 @@ import { SearchfoodComponent } from './pages/searchfood/searchfood.component';
 import { AdminloginComponent } from './pages/adminlogin/adminlogin.component';
 import { FormsModule } from '@angular/forms';
 
-import{HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
-import { ServiceComponent } from './service/service.component';
-import { FoodComponent } from './pages/food/food.component';
-import { FoodListComponent } from './foodList/food-list/food-list.component';
+import { ManageFoodItemsComponent } from './pages/manage-food-items/manage-food-items.component';
+
+
 
 
 @NgModule({
@@ -27,9 +26,10 @@ import { FoodListComponent } from './foodList/food-list/food-list.component';
     SearchfoodComponent,
     AdminloginComponent,
     AdminDashboardComponent,
-    ServiceComponent,
-    FoodComponent,
-    FoodListComponent,
+    ManageFoodItemsComponent
+
+    
+    
     
    
   ],
@@ -38,7 +38,7 @@ import { FoodListComponent } from './foodList/food-list/food-list.component';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    
  
    
   ],
